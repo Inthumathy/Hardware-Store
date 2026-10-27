@@ -1,0 +1,218 @@
+
+.hardware-admin-content {
+  width: 100%;
+  min-width: 0;
+  min-height: calc(100vh - 100px);
+  padding: 35px 32px 65px;
+  background: #f4f6fb;
+  box-sizing: border-box;
+}
+
+.hardware-admin-content * {
+  box-sizing: border-box;
+}
+
+.hardware-admin-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.hardware-admin-welcome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 55px 48px;
+  border-radius: 23px;
+  background: linear-gradient(
+    115deg,
+    #102743 0%,
+    #244b73 100%
+  );
+  color: #fff;
+  margin-bottom: 55px;
+  overflow: hidden;
+}
+
+.hardware-admin-welcome > div {
+  min-width: 0;
+}
+
+.hardware-admin-welcome span {
+  display: block;
+  margin-bottom: 24px;
+  color: #ff9d3f;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.hardware-admin-welcome h1 {
+  margin: 0 0 18px;
+  font-size: clamp(27px, 3.2vw, 42px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: #fff;
+}
+
+.hardware-admin-welcome p {
+  max-width: 620px;
+  margin: 0;
+  color: #d8e4f2;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.hardware-admin-welcome-icon {
+  flex-shrink: 0;
+  color: #ff9d3f;
+}
+
+.hardware-admin-section-header {
+  margin-bottom: 27px;
+}
+
+.hardware-admin-section-header span {
+  display: block;
+  margin-bottom: 12px;
+  color: #f28a22;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.hardware-admin-section-header h2 {
+  margin: 0 0 9px;
+  color: #10243e;
+  font-size: clamp(24px, 2.5vw, 30px);
+  font-weight: 800;
+}
+
+.hardware-admin-section-header p {
+  margin: 0;
+  color: #8292a7;
+  font-size: 14px;
+}
+
+.hardware-admin-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.hardware-admin-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  padding: 30px;
+  border: 1px solid #e4eaf3;
+  border-radius: 17px;
+  background: #fff;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(16, 36, 62, 0.025);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.hardware-admin-card:hover {
+  transform: translateY(-4px);
+  border-color: #f6c48d;
+  box-shadow: 0 12px 30px rgba(16, 36, 62, 0.08);
+}
+
+.hardware-admin-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 57px;
+  height: 57px;
+  border-radius: 14px;
+  margin-bottom: 23px;
+}
+
+.hardware-admin-card-icon.blue {
+  color: #2563eb;
+  background: #eaf2ff;
+}
+
+.hardware-admin-card-icon.orange {
+  color: #ed8620;
+  background: #fff0df;
+}
+
+.hardware-admin-card-icon.green {
+  color: #16a34a;
+  background: #e5f8ed;
+}
+
+.hardware-admin-card-icon.purple {
+  color: #8051d9;
+  background: #f0eaff;
+}
+
+.hardware-admin-card h3 {
+  margin: 0 0 12px;
+  color: #10243e;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.hardware-admin-card p {
+  margin: 0 0 25px;
+  color: #8392a7;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.hardware-admin-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: auto;
+  color: #ed8620;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.hardware-admin-card:hover .hardware-admin-card-link {
+  gap: 14px;
+}
+
+@media (max-width: 900px) {
+  .hardware-admin-content {
+    padding: 26px 20px 50px;
+  }
+
+  .hardware-admin-welcome {
+    padding: 40px 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  .hardware-admin-content {
+    padding: 20px 14px 40px;
+  }
+
+  .hardware-admin-welcome {
+    padding: 32px 23px;
+    margin-bottom: 35px;
+  }
+
+  .hardware-admin-welcome-icon {
+    display: none;
+  }
+
+  .hardware-admin-card-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .hardware-admin-card {
+    padding: 24px;
+  }
+}

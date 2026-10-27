@@ -1,0 +1,52 @@
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build files
+dist/
+build/
+coverage/
+.vite/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Uploaded/private files
+uploads/
+**/uploads/
+private/
+secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# OS and editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local database backups
+*.sql.gz
+*.dump
+*.sqlite
+*.sqlite3
+
+# Local development and testing scripts
+/backend/scripts/createAdmin.js
+/backend/scripts/createWorker.js
+/backend/src/debug-db.js
+/backend/src/test-db.js
+/backend/src/test-login-db.js
+/backend/test-email.js
+/backend/test-notify.js
